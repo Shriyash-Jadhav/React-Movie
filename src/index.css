@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #aa076b;
+  background: -webkit-linear-gradient(to right, #61045f, #aa076b);
+  background: linear-gradient(to right, #61045f, #aa076b);
+  color: white;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+.App {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.Movie {
+  background-color: #e61796;
+  width: 300px;
+  margin: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.61);
+  overflow: hidden;
+  position: relative;
+}
+
+.Movie img {
+  max-width: 100%;
+}
+
+.movie-info {
+  color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem 1rem;
+  letter-spacing: 0.5px;
+}
+
+.movie-info h4 {
+  margin: 0;
+  font-size: 20px;
+  align-items: initial;
+}
+
+.movie-info span {
+  background-color: #090a25;
+  border-radius: 3px;
+  font-weight: bold;
+  padding: 0.25rem 0.5rem;
+}
+
+.movie-over {
+  background-color: #fff;
+  color: #090a25;
+  box-shadow: 0 -4px 5px rgba(0, 0, 0, 0.61);
+  font-family: "Poppins", sans-serif;
+  padding: 2rem;
+  position: absolute;
+  max-height: 100%;
+  overflow: auto;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  transform: translateY(102%);
+  transition: transform 0.3s ease-in;
+}
+
+.movie-over h3 {
+  margin-top: 0;
+}
+
+.Movie:hover .movie-over {
+  transform: translateY(0);
+}
+.header {
+  overflow: hidden;
+  background-color: #090a25;
+  border: white;
+  justify-content: center;
+
+  width: 100%;
+  justify-content: center;
+  padding: 1rem;
+  align-items: center;
+  align-content: center;
+}
+.search {
+  background-color: transparent;
+  border: 2px solid #e61796;
+  border-radius: 50px;
+  color: #fff;
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  align-items: center;
+  align-content: center;
+}
+
+.search::placeholder {
+  color: #fff;
+}
+
+.search:focus {
+  background-color: #e61796;
+  outline: none;
+}
